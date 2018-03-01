@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<body background="https://media.istockphoto.com/vectors/dog-french-bulldog-puppy-face-dog-head-doodle-vector-seamless-pattern-vector-id895983540?s=2048x2048">
+<head>
+      <title>Techtonica Calculator</title>
+      <meta charset ="utf-12">
+      <!-- <link rel="stylesheet" type="text/css" href="/CSS/calculator.css"> -->
+      <style>
+      @import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+      #calc-contain{
+        position: relative;
+        background-color:#FFFFFF;
+        opacity: 0.96;
+        width: 600px;
+        border:3px solid 	#00FFFF;
+        border-radius:4px;
+        margin-top: 15%;
+
+      }
+
+      input[type=button] {
+        background: lightGray;
+        width: 20%;
+        font-size:20px;
+        font-weight: 900;
+        margin: 2%;
+        border-radius:4px;
+      }
+
+      input[type=text]{
+        position: relative;
+        display: block;
+        width:90%;
+        margin: 5px auto;
+        font-size: 20px;
+      }
+      .hotpink-text {
+        color: #ff69b4;
+      }
+
+      </style>
+</head>
+<div>
+
+<body ><center>
+
+
+  <div id="calc-contain">
+    <form name="calculator">
+      <br />
+      <div style="color:#00FFFF; font-family:Homemade Apple">
+      <h1> Calculator</h1>
+      </div>
+
+      <input type="text" name="answer"/>
+
+
+  <input type="button" value="1 " onclick="calculator.answer.value +='1'" /> <input type="button" value="2 " onclick="calculator.answer.value +='2'" />
+  <input type="button" value="3 " onclick="calculator.answer.value +='3'" />
+  <input type="button" value="+ " onclick="calculator.answer.value +='+'" />
+  <br />
+
+  <input type="button" value="4 " onclick="calculator.answer.value +='4'" />
+  <input type="button" value="5 " onclick="calculator.answer.value +='5'" />
+  <input type="button" value="6 " onclick="calculator.answer.value +='6'" />
+  <input type="button" value="- " onclick="calculator.answer.value +='-'" />
+  <br />
+
+  <input type="button" value="7 " onclick="calculator.answer.value +='7'" />
+  <input type="button" value="8 " onclick="calculator.answer.value +='8'" />
+  <input type="button" value="9 " onclick="calculator.answer.value +='9'" />
+  <input type="button" value="x " onclick="calculator.answer.value +='*'" />
+  <br />
+
+  <input type="button" value="c " onclick="calculator.answer.value =''" />
+  <input type="button" value="0 " onclick="calculator.answer.value +='0'" />
+  <input type="button" value="= " onclick="calculator.answer.value =eval(calculator.answer.value)" />
+  <input type="button" value="÷ " onclick="calculator.answer.value +='/'" />
+  <br />
+
+    </form>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="static/js/calculator.js"></script>
+
+
+  </html>
